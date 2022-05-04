@@ -1,6 +1,6 @@
 create database if not exists AD;
 use AD;
-
+/* Table: library_info*/
 create table if not exists library_info(
 id int auto_increment,
 name varchar(500) not null,
@@ -20,6 +20,7 @@ unique key (id),
 primary key(id)
 );
 
+/* Table: physical_visitors*/
 create table if not exists physical_visitors(
 id int auto_increment,
 name varchar(500) not null,
@@ -30,6 +31,7 @@ unique key (id),
 primary key(id)
 );
 
+/* Table: it_visitors*/
 create table if not exists it_visitors(
 id int auto_increment,
 name varchar(500) not null,
